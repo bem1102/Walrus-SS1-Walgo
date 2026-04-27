@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DuzngWal NFT Marketplace — a modern Web3-inspired dashboard for NFTs, posts, wallets, and creators.">
+  <title>DuzngWal NFT Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="Primary sidebar">
+      <div class="sidebar-top">
+        <div class="profile">
+          <img src="https://res.cloudinary.com/dzskv2ixh/image/upload/v1777250859/213213213123_xwfryh.jpg" alt="DuzngWal profile avatar">
+          <div class="profile-text">
+            <strong>DuzngWal</strong>
+            <span class="sub">HELLO BILLIONAIRES</span>
+          </div>
+        </div>
+
+        <h2 class="logo">DuzngWal ✨ NFT</h2>
+
+        <nav class="nav" aria-label="Sidebar navigation">
+          <a class="active" href="#" aria-current="page">NFT Marketplace</a>
+          <a href="#">Blockchain Dev</a>
+          <a href="#">Web3 Products</a>
+          <a href="#">Popular Merch</a>
+          <a href="#">My Wallets</a>
+          <a href="#">Community</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="wallet-connect" type="button">Connect Wallet</button>
+        <button class="btn-theme" type="button">🌙 Theme</button>
+
+        <div class="socials" aria-label="Social links">
+          <a href="https://x.com/bem1102" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://github.com/bem1102" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" id="main-content">
+      <header class="header">
+        <h1>DuzngWal NFT Marketplace</h1>
+        <label class="sr-only" for="search">Search NFT</label>
+        <input id="search" type="search" placeholder="Search NFT..." autocomplete="off">
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <span class="badge">Walrus Hackathon</span>
+          <h2 id="hero-title">Walrus Sessions:<br>Walgo Site Builder</h2>
+          <p>Build and launch your personal website on Walrus. A fast-paced Web3 hackathon designed for builders.</p>
+          <div class="hero-actions">
+            <button class="btn-main" type="button">Enroll Now</button>
+            <button class="btn-secondary" type="button">Learn More</button>
+          </div>
+        </div>
+
+        <img class="hero-img" src="https://images.suipassport.app/88afd1ac-7743-439f-ab57-9685989705b6.png" alt="Walrus Sessions promotional artwork">
+      </section>
+
+      <section aria-labelledby="hot-nfts-title">
+        <h3 id="hot-nfts-title">Hot Walrus NFTs</h3>
+        <div class="carousel" id="carousel"></div>
+      </section>
+
+      <section aria-labelledby="latest-posts-title">
+        <h3 id="latest-posts-title">Latest Posts</h3>
+        <div class="posts" id="posts"></div>
+      </section>
+    </main>
+
+<aside class="right">
+
+  <!-- WALLET -->
+  <section class="wallet">
+    <h3>Your Wallet</h3>
+    <h2>$2268.90</h2>
+
+    <div class="wallet-actions">
+      <button>Send</button>
+      <button>Receive</button>
+    </div>
+
+    <!-- ✅ COINS (THÊM ID) -->
+    <div id="coins" class="coins"></div>
+  </section>
+
+  <!-- STORIES -->
+  <section class="stories">
+    <h3>Top Stories</h3>
+
+    <!-- ✅ FIX -->
+    <div id="storiesList"></div>
+  </section>
+
+  <!-- SELLERS -->
+  <section class="sellers">
+    <h3>Top Sellers</h3>
+
+    <div class="seller">
+      <span>WalrusProtocol</span>
+      <a href="https://x.com/WalrusProtocol" target="_blank">Follow</a>
+    </div>
+
+    <div class="seller">
+      <span>walgo_xyz</span>
+      <a href="https://x.com/walgo_xyz" target="_blank">Follow</a>
+    </div>
+
+    <div class="seller">
+      <span>bem1102</span>
+      <a href="https://x.com/bem1102" target="_blank">Follow</a>
+    </div>
+  </section>
+
+  <!-- CREATORS -->
+  <section class="creators">
+    <h3>Top creators</h3>
+
+    <div class="creator">
+      <span>🥇 WalrusProtocol</span>
+      <span>98.4</span>
+    </div>
+
+    <div class="creator">
+      <span>🥈 walgo_xyz</span>
+      <span>92.1</span>
+    </div>
+
+    <div class="creator">
+      <span>🥉 bem1102</span>
+      <span>89.7</span>
+    </div>
+  </section>
+
+</aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
